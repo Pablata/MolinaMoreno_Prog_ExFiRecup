@@ -219,6 +219,7 @@ public class Pokedex {
 	}
 
 	private void modoInsertar() {
+		limpiar();
 		fieldComentarios.setEnabled(true);
 		fieldNombre.setEnabled(true);
 		fieldNivel.setEnabled(true);
@@ -233,7 +234,7 @@ public class Pokedex {
 		btnInsertar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				limpiar();
+				
 				Pokemon p = container.Contenedor.ml.get(indicePokemon);
 
 				
